@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Watch Shop</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Watch<span>Shop</span></a>
+            <nav class="nav-menu">
+                <a href="#home">Trang chủ</a>
+                <a href="#shop">Sản phẩm</a>
+                <a href="#about">Về chúng tôi</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+            <div class="search-bar">
+                <input type="search" placeholder="Search for watches..." aria-label="Search">
+                <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="icons">
+                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" class="login"><i class="fa fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <div id="list">
+        <ul>
+            <li>Thương hiệu</li>
+            <li>Nam</li>
+            <li>Nữ</li>
+            <li>Cặp đôi</li>
+            <li>Dòng đặc biệt</li>
+            <li>Sửa chữa</li>
+            <li>Dây đồng hồ</li>
+            <li>Doanh nghiệp</li>
+            <li>Về Tân Tân</li>
+            <li>Kinh nghiệm</li>
+        </ul>
+    </div>
+
+    <!-- Nội dung chính của trang web -->
+    <main>
+
+        <div class="body">
+            <div class="wrapper">
+                <form onsubmit="login(event)">
+                    <h3>Đăng nhập</h3>
+                    <div class="input-box">
+                        <input type="text" id="username" placeholder=" " required> <!--Để cách là có giá trị nên chũ sẽ ko nhảy xuống-->
+                        <label for="username">Username</label>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder=" " required>
+                        <label for="password">Password</label>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label for=""><input type="checkbox">Ghi nhớ tôi</label>
+                        <a href="#">Bạn quên mật khẩu?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Đăng nhập</button>
+
+                    <p class="social-text">Hoặc đăng nhập với tài khoản xã hội </p>
+
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
+
+                    <div class="register-link">
+                        <p>Bạn chưa có tài khoản?
+                            <a href="../pages/register.html">Đăng kí ngay</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../js/login&register.js"></script>
+</body>
+
+</html>

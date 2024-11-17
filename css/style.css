@@ -1,0 +1,171 @@
+@import url('http://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-image: url('../image/anh1.png');
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7px 0 7px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: none;
+    margin-left: 0;
+    text-shadow: .2em .2em #c6c852; ;
+}
+
+.header .logo span {
+    color: white;
+    text-shadow: .2em .2em silver;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.nav-menu a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+    color: #ffcc00;
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+    margin: 0 1cm 0 1cm;
+    gap: 5px;
+}
+
+
+.search-bar input[type="search"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+}
+
+.search-button {
+    background-color: #ffcc00;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.search-button i {
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #e6e6e6;
+}
+
+/* Căn chỉnh biểu tượng trong header */
+.icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.icons a {
+    color: #ddd;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #ffcc00;
+}
+
+
+/* Footer */
+.footer {
+    background-image: url('image/anh1.png');
+    background-color: #222;
+    color: #ddd;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-top {
+    margin-bottom: 20px;
+}
+
+.footer .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer .logo span {
+    color: #ddd;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+#list ul {
+    display:flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+#list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,189 @@
+@import url('http://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f4f7;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    height: 500px;
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, .2);
+    
+    /*backdrop-filter: blur(20px); /*Lam mo*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: black;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+.wrapper h3 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+
+
+/*-----------input-box----------*/
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 21px 0;
+    color: #b9aeae;
+    background-color: #ffffff;
+    border-radius: 40px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    transition: 0.2s ease;
+}
+
+.input-box input:focus {
+    border: 2px solid #ffcc00;
+}
+
+
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #b9aeae;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-box input:not(:placeholder-shown) + label, /*Để khi ko focus thì label cx ko nhảy xuống*/
+.input-box input:focus + label {
+    top: 0;
+    font-size: 13px;
+    background-color: #ffffff; /*Đổi màu theo nền*/
+    display: inline-block;
+    padding: 5px;
+    color: #ffcc00;
+    border-radius: 30px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+
+/*--------------remember-------------*/
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-top: 3px;
+}
+
+.remember-forgot a {
+    color: black;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+
+/*---------------button đăng nhập----------*/
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #ffcc00;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.wrapper .btn:hover {
+    background-color: #c4aa43;
+    text-decoration: underline;
+}
+
+.social-text {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+/*---------Chỉnh sửa icon-------------*/
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+  
+.social-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    color: #333;
+    border-radius: 50%;
+    border: 1px solid #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+  
+  .social-icon:hover {
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+
+/*------------Quên mật khẩu---------------*/
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 15px 0 ;
+    padding-top: 0;
+}
+
+.register-link p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
