@@ -187,3 +187,18 @@
     text-decoration: underline;
 }
 
+@media (max-width: 437px) {
+    .body {
+        padding: 5px;
+    }
+
+    .wrapper h3 {
+        font-size: 25px;
+    }
+
+    .wrapper .input-box {
+        width: 100%;
+        height: 40px;
+    }
+}
+
