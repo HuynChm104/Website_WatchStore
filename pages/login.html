@@ -4,52 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login.css">
-    <title>Watch Shop</title>
+    <title>Đăng nhập</title>
 </head>
 
 <body>
+
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">Watch<span>Shop</span></a>
-            <nav class="nav-menu">
-                <a href="#home">Trang chủ</a>
-                <a href="#shop">Sản phẩm</a>
-                <a href="#about">Về chúng tôi</a>
-                <a href="#contact">Liên hệ</a>
-            </nav>
-            <div class="search-bar">
-                <input type="search" placeholder="Search for watches..." aria-label="Search">
-                <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="icons">
-                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="#" class="login"><i class="fa fa-user"></i></a>
-            </div>
+    <header>
+        <input type ="checkbox" name ="" id ="chk1">
+        <div class="logo">Watch<span class="header-span">Store</span></div>
+        <div class="search-box-header">
+            <form>
+                <input type ="text" name ="search" id ="srch" placeholder="Search">
+                <button type ="submit" class="button-header"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <ul class="main-menu-header">
+            <li class="header-name"><a href="#" class="header-link">Trang chủ</a></li>
+            <li class="header-name"><a href="#" class="header-link">Sản phẩm</a></li>
+            <li class="header-name"><a href="../pages/aboutUs.html" class="header-link">Về chúng tôi</a></li>
+            <li class="header-name"><a href="../pages/contactUs.html" class="header-link">Liên hệ</a></li>
+
+            <li class="header-name icons">
+                <a href="#" class="header-link"><i class="fa-solid fa-cart-shopping" id="header-icons"></i></a>
+                <a href="../pages/login.html" class="header-link"><i class="fa-solid fa-user" id="header-icons"></i></a>      
+            </li>
+        </ul>
+
+        <div class="menu-header">
+            <label for="chk1">
+                <i class="fa-solid fa-bars" id="header-icons"></i>
+            </label>
         </div>
     </header>
-    <div id="list">
-        <ul>
-            <li>Thương hiệu</li>
-            <li>Nam</li>
-            <li>Nữ</li>
-            <li>Cặp đôi</li>
-            <li>Dòng đặc biệt</li>
-            <li>Sửa chữa</li>
-            <li>Dây đồng hồ</li>
-            <li>Doanh nghiệp</li>
-            <li>Về Tân Tân</li>
-            <li>Kinh nghiệm</li>
-        </ul>
-    </div>
 
     <!-- Nội dung chính của trang web -->
     <main>
 
         <div class="body">
-            <div class="wrapper">
+            <div class="wrapper login">
                 <form onsubmit="login(event)">
                     <h3>Đăng nhập</h3>
                     <div class="input-box">
@@ -94,6 +92,94 @@
             </div>
         </div>
     </main>
+
+    <!-------- Footer --------->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logo">Watch<span>Store</span></div>
+                <p>Your Time, Your Style – Thời gian của bạn, Phong cách của bạn!</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="twitter">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="tel:+84842668121">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="mailto:huyencham10042k4@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Hệ thống cửa hàng</h3>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/Fe5it7yBeczqKwj86" class="footer-link">331 Đ. Ng. Gia Tự, P.Tiền An, Bắc Ninh</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/a8qRxE49UL5dGZrHA" class="footer-link">Phố P. Thanh Vị, Thanh Mỹ, Sơn Tây, Hà Nội</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/wBLUgrx3MSaYxfB99" class="footer-link">12 P. Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/q17Ey6vtffrFr2XTA" class="footer-link">441 Nguyễn Huệ, Phường7, Tuy Hòa, Phú Yên</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Tiện ích</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Danh sách sản phẩm</a>
+                </li>
+                <li>
+                    <a href="../pages/contactUs.html" class="footer-link">Liên hệ với chúng tôi</a>
+                </li>
+                <li>
+                    <a href="../pages/aboutUs.html" class="footer-link">Tìm hiểu về chúng tôi</a>
+                </li>
+                <li>
+                    <a href="../pages/aboutUs.html" class="footer-link">Trở thành 1 phần của chúng tôi</a>
+                </li>
+            </ul>
+
+
+
+            <div id="footer_subscribe">
+                <h3>Theo dõi</h3>
+
+                <p>
+                    Nhập email của bạn để nhận tất cả các thông báo mới nhất của chúng tôi
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Bảo lưu mọi quyền
+        </div>
+    </footer>
 
 
     <script src="../js/login&register.js"></script>
