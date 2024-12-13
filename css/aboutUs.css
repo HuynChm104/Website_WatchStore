@@ -1,0 +1,146 @@
+/* General styles */
+main {
+
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #4a4a4a;
+}
+
+h2 {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+section.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s linear;
+}
+
+/* Content styles */
+.content {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.short-text,
+.detailed-text {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Button styles */
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #FFD700, #FFA500); /* Gradient từ vàng ánh kim đến cam ánh kim */
+    color: black; /* Chữ trắng */
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ */
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #FFD700, #FFD700); /* Gradient đổi màu khi hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Bóng đổ mạnh hơn */
+    transform: translateY(-2px); /* Tạo hiệu ứng nhấn nổi */
+}
+
+/* Image styles */
+.image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reverse layout for alternating blocks */
+.block:nth-child(even) .content {
+    order: 2; /* Nội dung bên phải */
+    text-align: left;
+}
+
+.block:nth-child(even) .image {
+    order: 1; /* Ảnh bên trái */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    section.block {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .content,
+    .image {
+        max-width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .block:nth-child(even) .content {
+        order: 1; /* Nội dung lên trên */
+        text-align: top;
+    }
+    
+    .block:nth-child(even) .image {
+        order: 2; /* Ảnh xuống dưới */
+        margin: 10px;
+    }
+
+    .btn {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 360px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}

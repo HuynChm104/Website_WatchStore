@@ -1,171 +1,327 @@
 @import url('http://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+html, body {
+    margin-top: 0;
+    padding-top: 0;
 }
 
-/* Header */
-.header {
-    background-image: url('../image/anh1.png');
-    background-color: #222;
-    color: white;
-    padding: 15px 0;
+.logo {
+    font-size: 2rem;
+    color: #FFD700;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.header .container {
+.logo .header-span {
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+/* ------------------- HEADER --------------------- */
+header {
+    height: 50px;
+    top: 0; left: 0; right: 0;
+    position: relative;
+    background: #001f3f;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 7px 0 7px;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-.header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffcc00;
-    text-decoration: none;
-    margin-left: 0;
-    text-shadow: .2em .2em #c6c852; ;
+#chk1 {
+    display: none;
 }
 
-.header .logo span {
-    color: white;
-    text-shadow: .2em .2em silver;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 30px;
-    margin-left: auto;
-}
-
-.nav-menu a {
-    color: #ddd;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.nav-menu a:hover {
-    color: #ffcc00;
-}
-
-/* Thanh tìm kiếm */
-.search-bar {
-    margin: 0 1cm 0 1cm;
-    gap: 5px;
-}
-
-
-.search-bar input[type="search"] {
-    width: 200px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    font-size: 14px;
-}
-
-.search-button {
-    background-color: #ffcc00;
-    color: white;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 0 4px 4px 0;
+i {
+    color: #fff;
     cursor: pointer;
-    font-size: 14px;
-
 }
 
-.search-button i {
-    font-size: 16px;
+header .search-box-header {
+    position: relative;
+    /*margin-left: 20px;*/
 }
 
-.search-button:hover {
-    background-color: #e6e6e6;
+.search-box-header #srch {
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 5px;
+    color: gray;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: left;
 }
 
-/* Căn chỉnh biểu tượng trong header */
-.icons {
+.search-box-header .button-header {
+    cursor: pointer;
+    width: 43px;
+    height: 43px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    top: 0; right: 0;
+    transform: scale(0.9);
+    background: #FFD700;
+    color: #C0C0C0;
+}
+
+header .main-menu-header {
     display: flex;
-    gap: 30px;
+    justify-content: space-evenly;
+    gap: 45px;
+
+}
+
+header .main-menu-header .header-name {
+    list-style: none;
+}
+
+header .main-menu-header .header-name .header-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+
+header .main-menu-header .header-name .header-link:hover {
+    border-bottom: 2px solid #FFD700; /*Gạch chân dưới*/
+}
+
+header .menu-header {
+    font-size: 2.5em;
+    display: none;  /*ẩn biểu tượng bars*/
+}
+
+header .menu-header #header-icons:hover {
+    color: #FFD700;
+}
+
+@media (max-width: 1000px) {
+    .search-box-header .button-header {
+        position: absolute;
+    }
+
+    header .main-menu-header {
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        background: rgba(0, 31, 63, 0.799);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+
+    header .menu-header {
+        display: block;
+        width: 70px;
+        text-align: center;
+    }
+
+    #chk1:checked ~ .main-menu-header {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 567px) {
+    header .logo {
+        font-size: 1.55rem;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 520px) {
+    header .search-box-header {
+        position: fixed;
+        top: 115px;
+        right: -100%;
+        background: none;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+
+    #chk1:checked ~ .search-box-header {
+        position: absolute;
+        width: 100%;
+        right: 0;
+    }
+
+    header .main-menu-header {
+        top: 141px;
+    }
+
+}
+
+/* ------------------------- FOOTER ------------------------- */
+footer {
+    width: 100%;
+    color: #f5f5f5;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: #001f3f;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2.5rem;
+}
+
+#footer_content h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#footer_content #footer_contacts p {
+    margin-left: 0.5cm;
+}
+
+#footer_social_media {
+    margin-left: 0.5cm;
+}
+
+#footer_contacts {
+    margin-top: 2cm;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media i:hover {
+    color: #FFD700;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: white;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #FFD700;
+}
+
+#footer_subscribe {
+    margin-top: 1rem;
+}
+
+#footer_subscribe p {
+    color: white;
+}
+
+#input_group {
+    display: flex;
     align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 4px;
 }
 
-.icons a {
-    color: #ddd;
-    font-size: 22px;
-    text-decoration: none;
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+    color: black;
 }
 
-.icons a:hover {
-    color: #ffcc00;
+#input_group button {
+    background-color: #FFD700;
+    border: none;
+    color: black;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 43px;
+    width: 43px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
 }
 
-
-/* Footer */
-.footer {
-    background-image: url('image/anh1.png');
-    background-color: #222;
-    color: #ddd;
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 50px;
+#input_group i {
+    margin-left: -1.4mm;
 }
 
-.footer-top {
-    margin-bottom: 20px;
+#input_group button:hover {
+    opacity: 0.8;
 }
 
-.footer .logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffcc00;
-    text-decoration: none;
-}
-
-.footer .logo span {
-    color: #ddd;
-}
-
-.footer p {
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-.social-links a {
-    color: #ddd;
-    text-decoration: none;
-    margin: 0 5px;
-    font-size: 14px;
-}
-
-.social-links a:hover {
-    color: #ffcc00;
-}
-
-.footer-bottom {
-    border-top: 1px solid #444;
-    padding-top: 20px;
-    font-size: 12px;
-}
-
-#list ul {
-    display:flex;
-    list-style-type: none;
+#footer_copyright {
+    display: flex;
     justify-content: center;
-    gap: 20px;
-    font-weight: bold;
+    background-color: #FFD700;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
 }
 
-#list {
-    padding-top: 10px;
-    padding-bottom: 10px;
+@media (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    #footer_content .footer-list {
+        margin-left: -0.6cm;
+    }
+
+    #footer_content #footer_subscribe {
+        margin-left: 0.5cm;
+    }
 }
+
+@media (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 2rem 2rem 2rem;
+    }
+}
+

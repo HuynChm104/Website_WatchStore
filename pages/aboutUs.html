@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về chúng tôi</title>
+    <link rel="stylesheet" href="../css/aboutUs.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+
+    <header>
+        <input type ="checkbox" name ="" id ="chk1">
+        <div class="logo">Watch<span class="header-span">Store</span></div>
+        <div class="search-box-header">
+            <form>
+                <input type ="text" name ="search" id ="srch" placeholder="Search">
+                <button type ="submit" class="button-header"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <ul class="main-menu-header">
+            <li class="header-name"><a href="#" class="header-link">Trang chủ</a></li>
+            <li class="header-name"><a href="#" class="header-link">Sản phẩm</a></li>
+            <li class="header-name"><a href="../pages/aboutUs.html" class="header-link">Về chúng tôi</a></li>
+            <li class="header-name"><a href="../pages/contactUs.html" class="header-link">Liên hệ</a></li>
+
+            <li class="header-name icons">
+                <a href="#" class="header-link"><i class="fa-solid fa-cart-shopping" id="header-icons"></i></a>
+                <a href="../pages/login.html" class="header-link"><i class="fa-solid fa-user" id="header-icons"></i></a>      
+            </li>
+        </ul>
+
+        <div class="menu-header">
+            <label for="chk1">
+                <i class="fa-solid fa-bars" id="header-icons"></i>
+            </label>
+        </div>
+    </header>
+
+    <main>
+    <!-- Câu chuyện của chúng tôi -->
+    <section class="block">
+        <div class="content left">
+            <h2>Câu chuyện của chúng tôi</h2>
+            <p class="short-text">
+                Từ niềm đam mê với nghệ thuật chế tác đồng hồ, chúng tôi đã xây dựng <em>Watch Store</em> để mang đến những sản phẩm thể hiện giá trị thời gian và phong cách sống.
+            </p>
+            <p class="detailed-text hidden">
+                Hành trình của <em>Watch Store</em> bắt đầu từ năm 2024, với sứ mệnh đưa những cỗ máy thời gian tinh tế và độc đáo đến tay khách hàng.<br>
+                Chúng tôi luôn tin rằng mỗi chiếc đồng hồ không chỉ là công cụ đo thời gian, mà còn là biểu tượng của sự sang trọng và đẳng cấp. Từng bộ sưu tập tại <em>Watch Store</em> đều được lựa chọn kỹ lưỡng, với cảm hứng từ cả truyền thống chế tác cổ điển và công nghệ hiện đại.<br>
+                Suốt chặng đường phát triển, chúng tôi luôn duy trì các tiêu chuẩn khắt khe về chất lượng, từ quy trình sản xuất đến dịch vụ chăm sóc khách hàng. Điều đó giúp Watch Store trở thành sự lựa chọn hàng đầu của những người yêu đồng hồ.<br>
+            </p>
+            <button class="btn toggle-btn" onclick="toggleDetails(this)">Xem chi tiết</button>
+        </div>
+        <div class="image right">
+            <img src="../image/Cauchuyen.png" alt="Câu chuyện">
+        </div>
+    </section>
+
+    <!-- Dịch Vụ -->
+    <section class="block">
+        <div class="content right">
+            <h2>Dịch vụ hoàn hảo</h2>
+            <p class="short-text">
+                Chúng tôi mang đến những dịch vụ chăm sóc chuyên nghiệp, từ bảo hành, sửa chữa đến hỗ trợ khách hàng tận tâm.
+            </p>
+            <p class="detailed-text hidden">
+                Sự hài lòng của khách hàng luôn là mục tiêu hàng đầu của Watch Store. Chúng tôi tự hào cung cấp:<br>
+                - Bảo hành lâu dài: Đối với mọi sản phẩm, chúng tôi cam kết chính sách bảo hành tối ưu, giúp khách hàng yên tâm trong quá trình sử dụng.<br>
+                - Dịch vụ sửa chữa chuyên nghiệp: Với đội ngũ kỹ thuật viên dày dặn kinh nghiệm, mọi vấn đề của đồng hồ sẽ được xử lý nhanh chóng và chính xác.<br>
+                - Tư vấn cá nhân hóa: Dựa trên phong cách và nhu cầu của bạn, chúng tôi sẽ giúp bạn lựa chọn mẫu đồng hồ phù hợp nhất.<br>
+                Không chỉ là sản phẩm, chúng tôi muốn khách hàng trải nghiệm dịch vụ tận tâm và chuyên nghiệp, để mỗi lần sử dụng đồng hồ từ <em>Watch Store</em> là một niềm vui.
+            </p>
+            <button class="btn toggle-btn" onclick="toggleDetails(this)">Xem chi tiết</button>
+        </div>
+        <div class="image left">
+            <img src="../image/Dichvu.png" alt="Dịch Vụ">
+        </div>
+    </section>
+
+    <!-- Tầm nhìn -->
+    <section class="block">
+        <div class="content left">
+            <h2>Tầm nhìn - sứ mệnh</h2>
+            <p class="short-text">
+                Chúng tôi cam kết xây dựng một thương hiệu đồng hồ uy tín, kết nối giá trị thời gian và phong cách cá nhân.
+            </p>
+            <p class="detailed-text hidden">
+                Tầm Nhìn: Trở thành thương hiệu đồng hồ hàng đầu tại Việt Nam và được yêu thích trên toàn thế giới, nơi mỗi sản phẩm là sự kết hợp hoàn hảo giữa nghệ thuật và công nghệ.<br>
+                Sứ Mệnh:<br>
+                - Mang đến những chiếc đồng hồ không chỉ chính xác mà còn mang giá trị về thẩm mỹ và cá tính.<br>
+                - Kết nối con người qua những câu chuyện về thời gian và đam mê.<br>
+                - Đóng góp vào sự phát triển bền vững bằng việc xây dựng cộng đồng yêu thích đồng hồ, lan tỏa phong cách sống đẳng cấp.<br>
+                Chúng tôi luôn hướng tới sự đổi mới, sáng tạo và trách nhiệm xã hội để không ngừng nâng cao chất lượng sản phẩm và dịch vụ.
+            </p>
+            <button class="btn toggle-btn" onclick="toggleDetails(this)">Xem chi tiết</button>
+        </div>
+        <div class="image right">
+            <img src="../image/Sumenh.png" alt="Tầm nhìn">
+        </div>
+    </section>
+
+        <!-- Đến với chúng tôi -->
+    <section class="block">
+        <div class="content right">
+            <h2>Trở thành một phần của chúng tôi</h2>
+            <p class="short-text">
+                Chúng tôi luôn tìm kiếm những cá nhân đam mê và sáng tạo để cùng nhau phát triển thương hiệu.
+            </p>
+            <p class="detailed-text hidden">
+                Tại <em>Watch Store</em>, chúng tôi hiểu rằng đội ngũ nhân viên là tài sản quý giá nhất. Chúng tôi luôn tìm kiếm những cá nhân có đam mê với đồng hồ, sáng tạo trong tư duy và tận tâm trong công việc để gia nhập đại gia đình của mình.
+                <br>Khi trở thành một phần của <em>Watch Store</em>, bạn sẽ:
+                <br>- Làm việc trong môi trường chuyên nghiệp và thân thiện.
+                <br>- Được đào tạo và phát triển kỹ năng cá nhân.
+                <br>- Góp phần xây dựng thương hiệu đồng hồ hàng đầu, truyền cảm hứng cho cộng đồng.
+            </p>
+            <button class="btn toggle-btn" onclick="toggleDetails(this)">Xem chi tiết</button>
+        </div>
+        <div class="image left">
+            <img src="../image/Nghenghiep.png" alt="Nghề nghiệp">
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logo">Watch<span>Store</span></div>
+                <p>Your Time, Your Style – Thời gian của bạn, Phong cách của bạn!</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="twitter">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="tel:+84842668121">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="mailto:huyencham10042k4@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Hệ thống cửa hàng</h3>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/Fe5it7yBeczqKwj86" class="footer-link">331 Đ. Ng. Gia Tự, P.Tiền An, Bắc Ninh</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/a8qRxE49UL5dGZrHA" class="footer-link">Phố P. Thanh Vị, Thanh Mỹ, Sơn Tây, Hà Nội</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/wBLUgrx3MSaYxfB99" class="footer-link">12 P. Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/q17Ey6vtffrFr2XTA" class="footer-link">441 Nguyễn Huệ, Phường7, Tuy Hòa, Phú Yên</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Tiện ích</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Danh sách sản phẩm</a>
+                </li>
+                <li>
+                    <a href="../pages/contactUs.html" class="footer-link">Liên hệ với chúng tôi</a>
+                </li>
+                <li>
+                    <a href="../pages/aboutUs.html" class="footer-link">Tìm hiểu về chúng tôi</a>
+                </li>
+                <li>
+                    <a href="../pages/aboutUs.html" class="footer-link">Trở thành 1 phần của chúng tôi</a>
+                </li>
+            </ul>
+
+
+
+            <div id="footer_subscribe">
+                <h3>Theo dõi</h3>
+
+                <p>
+                    Nhập email của bạn để nhận tất cả các thông báo mới nhất của chúng tôi
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Bảo lưu mọi quyền
+        </div>
+    </footer>
+    <script src="../js/aboutUs.js"></script>
+</body>
+</html>

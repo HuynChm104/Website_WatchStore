@@ -12,8 +12,7 @@ main {
 .contactUs {
     position: relative;
     width: 70%;
-    padding: 40px 160px;
-
+    padding: 20px 160px;
 }
 
 
@@ -61,14 +60,15 @@ main {
     color: black;
     /*font-weight: 500;*/
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
     font-style: bold;
 }
 
 /*--------form-----------*/
 .formBox {
     position: relative;
-    width: 450px;
+    width: 100%;
 }
 
 
@@ -94,7 +94,7 @@ main {
 }
 
 .inputBox input:focus {
-    border: 2px solid #ffcc00;
+    border: 2px solid #FFD700;
 }
 
 .inputBox label {
@@ -144,19 +144,22 @@ main {
 }
 
 .inputBox input[type="submit"] {
-    background: #ffcc00;
-    color: black;
-    border: none;
-    font-size: 16px;
     max-width: 120px;
-    font-weight: 600;
-    cursor: pointer;
     padding: 14px 15px;
+    background: linear-gradient(90deg, #FFD700, #FFA500); /* Gradient từ vàng ánh kim đến cam ánh kim */
+    color: black; /* Chữ trắng */
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ */
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.4s ease;
 }
 
 .inputBox input[type="submit"]:hover {
-    background: #c4aa43;
-    text-decoration: underline;
+    background: linear-gradient(90deg, #FFD700, #FFD700); /* Gradient đổi màu khi hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Bóng đổ mạnh hơn */
+    transform: translateY(-2px); /* Tạo hiệu ứng nhấn nổi */
 }
 
 
@@ -180,7 +183,7 @@ main {
     min-width: 30px;
     height: 30px;
     color: #fff;
-    background: #ffcc00;
+    background: #FFD700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,6 +204,10 @@ main {
     font-size: 15px;
 }
 
+.info .infoBox div a:hover {
+    color: #FFD700;
+}
+
 .sci {
     margin-top: 25px;
     display: flex;
@@ -214,13 +221,13 @@ main {
     margin-right: 15px;
 }
 
-.sci li a {
-    font-size: 2em;
+.sci li a i {
+    font-size: 25px;
     color: #fff;
 }
 
-.sci li a:hover {
-    color: #ffcc00;
+.sci li a:hover i {
+    color: #FFD700;
 }
 
 .map {
@@ -234,12 +241,12 @@ main {
 }
 
 /*-----Responsive-----------*/
-@media (max-width: 911px){
+@media (max-width: 900px){
     .contact {
-        padding: 30px;
+        padding: 35px;
     }
     .contactUs {
-        padding: 20px;
+        padding: 10px 110px;
     }
     .box {
         position: relative;
@@ -261,7 +268,36 @@ main {
         flex-direction: column;
     }
     .inputBox {
-        width: 100%;
+        width: 85%;
     }
 }
+
+@media (max-width: 670px) {
+    .contactUs {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .box {
+        grid-template-columns: 1fr; /* Chuyển các vùng form, info, map thành một cột */
+        grid-gap: 15px; /* Khoảng cách giữa các vùng */
+    }
+
+    .formBox {
+        width: 100%; /* Form chiếm toàn bộ chiều rộng */
+    }
+
+    .inputBox input, .inputBox textarea {
+        width: 85%; /* Input chiếm toàn bộ chiều rộng */
+    }
+}
+
+@media (max-width: 382px) {
+    .contact {
+        padding: 15px;
+    }
+}
+
 
