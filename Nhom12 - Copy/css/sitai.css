@@ -1,0 +1,72 @@
+  .banner {
+    position: relative;
+    max-width: 50%;
+    height: 100px; /* Điều chỉnh chiều cao phù hợp */
+    overflow: hidden;
+    background: #ff0000; /* Màu nền */
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 50%;
+    height: 500px;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .controls button {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+  
+  .controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .indicators button {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .indicators button.active {
+    background-color: #ffffff;
+  }
+  
