@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Watch Shop</title>
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo">Watch<span class="header-span">Store</span></div>
+        <div class="search-box-header">
+            <form>
+                <input type="text" name="search" id="srch" placeholder="Search">
+                <button type="submit" class="button-header"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <ul class="main-menu-header">
+            <li class="header-name"><a href="../pages/trangchu.html" class="header-link">Trang chủ</a></li>
+            <li class="header-name"><a href="#" class="header-link">Sản phẩm</a></li>
+            <li class="header-name"><a href="../pages/aboutUs.html" class="header-link">Về chúng tôi</a></li>
+            <li class="header-name"><a href="../pages/contactUs.html" class="header-link">Liên hệ</a></li>
+
+            <li class="header-name icons">
+                <a href="../pages/cart.html" class="header-link"><i class="fa-solid fa-cart-shopping"
+                        id="header-icons"></i></a>
+                <a href="../pages/login.html" class="header-link"><i class="fa-solid fa-user" id="header-icons"></i></a>
+            </li>
+        </ul>
+
+        <div class="menu-header">
+            <label for="chk1">
+                <i class="fa-solid fa-bars" id="header-icons"></i>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <!--Slide show-->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="../image/banner-sale-noel_1733456621.webp" alt="Slide 1"></div>
+                <div class="slide"><img src="../image/banner_xu_huong_2024_1.webp" alt="Slide 2"></div>
+                <div class="slide"><img src="../image/rolex_4.webp" alt="Slide 3"></div>
+                <div class="slide"><img src="../image/bonest_gatti_2.webp" alt="Slide 4"></div>
+                <div class="slide"><img src="../image/carnival_3.webp" alt="Slide 5"></div>
+
+            </div>
+            <div class="navigation">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+        <!--Cách làm 5 thẻ bên dưới banner-->
+        <div class="container">
+            <div class="card">
+                <div class="icon">
+                    <span>⌚</span>
+                </div>
+                <div class="content">
+                    <h4>Mẫu mã đa dạng nhất</h4>
+                    <p>Hoàn tiền nếu phát hiện bán hàng giả</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <span>🚀</span>
+                </div>
+                <div class="content">
+                    <h4>Miễn phí vận chuyển</h4>
+                    <p>Giao hàng nhanh, đóng gói cẩn thận</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <span>🔄</span>
+                </div>
+                <div class="content">
+                    <h4>Đổi hàng 7 ngày</h4>
+                    <p>1 đổi 1 trong 7 ngày với sản phẩm lỗi</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <span>✅</span>
+                </div>
+                <div class="content">
+                    <h4>Bảo hành 5 năm</h4>
+                    <p>Thủ tục nhanh gọn, thay pin miễn phí</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <span>🛒</span>
+                </div>
+                <div class="content">
+                    <h4>Đeo trước trả sau</h4>
+                    <p>Trả trước 1 phần, 2 phần còn lại trả sau</p>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <section>
+
+            <div class="slider-container">
+                <div class="banner">
+                    <img src="../image/anhbanner.webp" alt="Xu hướng 2025">
+                </div>
+                <div class="sliderhot">
+                    <!-- Slide 1 -->
+                    <div class="slidehot">
+                        <div class="product">
+                            <img src="../image/watch1.webp" alt="Product 1">
+                            <div class="name">Casio - Nam AE-1200WHD-1AVDF</div>
+                            <div class="price">1.129.000đ</div>
+                            <div class="old-price">1.506.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch2.webp" alt="Product 2">
+                            <div class="name">Casio - Nam MTP-1374L-1AVDF</div>
+                            <div class="price">1.702.000đ</div>
+                            <div class="old-price">2.270.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch3.webp" alt="Product 3">
+                            <div class="name">Orient - Nam RA-AA0B02R39B</div>
+                            <div class="price">6.400.000đ</div>
+                            <div class="old-price">8.000.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch4.webp" alt="Product 4">
+                            <div class="name">Olym Pianus - Nam OP990</div>
+                            <div class="price">6.160.000đ</div>
+                            <div class="old-price">8.800.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch5.webp" alt="Product 5">
+                            <div class="name">Orient - Nam RA-AR0005Y30B</div>
+                            <div class="price">7.640.000đ</div>
+                            <div class="old-price">9.550.000đ</div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slidehot">
+                        <div class="product">
+                            <img src="../image/watch6.webp" alt="Product 1">
+                            <div class="name">Casio - Nam AE-1200WHD-1AVDF</div>
+                            <div class="price">1.129.000đ</div>
+                            <div class="old-price">1.506.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch7.webp" alt="Product 2">
+                            <div class="name">Casio - Nam MTP-1374L-1AVDF</div>
+                            <div class="price">1.702.000đ</div>
+                            <div class="old-price">2.270.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch8.webp" alt="Product 3">
+                            <div class="name">Orient - Nam RA-AA0B02R39B</div>
+                            <div class="price">6.400.000đ</div>
+                            <div class="old-price">8.000.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch9.webp" alt="Product 4">
+                            <div class="name">Olym Pianus - Nam OP990</div>
+                            <div class="price">6.160.000đ</div>
+                            <div class="old-price">8.800.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch10.webp" alt="Product 5">
+                            <div class="name">Orient - Nam RA-AR0005Y30B</div>
+                            <div class="price">7.640.000đ</div>
+                            <div class="old-price">9.550.000đ</div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slidehot">
+                        <div class="product">
+                            <img src="../image/watch11.webp" alt="Product 1">
+                            <div class="name">Casio - Nam AE-1200WHD-1AVDF</div>
+                            <div class="price">1.129.000đ</div>
+                            <div class="old-price">1.506.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch12.webp" alt="Product 2">
+                            <div class="name">Casio - Nam MTP-1374L-1AVDF</div>
+                            <div class="price">1.702.000đ</div>
+                            <div class="old-price">2.270.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch13.webp" alt="Product 3">
+                            <div class="name">Orient - Nam RA-AA0B02R39B</div>
+                            <div class="price">6.400.000đ</div>
+                            <div class="old-price">8.000.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch14.webp" alt="Product 4">
+                            <div class="name">Olym Pianus - Nam OP990</div>
+                            <div class="price">6.160.000đ</div>
+                            <div class="old-price">8.800.000đ</div>
+                        </div>
+                        <div class="product">
+                            <img src="../image/watch15.webp" alt="Product 5">
+                            <div class="name">Orient - Nam RA-AR0005Y30B</div>
+                            <div class="price">7.640.000đ</div>
+                            <div class="old-price">9.550.000đ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="control-btn" id="previousButton">&#8592;</button>
+                    <button class="control-btn" id="nextButton">&#8594;</button>
+                </div>
+                <div class="discover">
+                    <button>Khám phá xu hướng 2025</button>
+                    <div class="santa">
+                        <img src="../image/santa-removebg-preview.png" alt="Ông già Noel">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- cHON DONG HO PHU HOP-->
+        <section class="watch-selection">
+            <h1>CHỌN ĐỒNG HỒ PHÙ HỢP</h1>
+            <p>WatchStore cung cấp đa dạng mẫu đồng hồ theo nhiều phong cách khác nhau</p>
+            <div class="watch-options">
+                <div class="watch-item">
+                    <img src="../image/xuhuong.webp" alt="Xu Hướng 2024">
+                    <p>Xu Hướng 2024</p>
+                </div>
+                <div class="watch-item">
+                    <img src="../image/babyg1.webp" alt="Baby-G cá tính">
+                    <p>Baby-G cá tính</p>
+                </div>
+                <div class="watch-item">
+                    <img src="../image/g-shock3.webp" alt="G-Shock thể thao">
+                    <p>G-Shock thể thao</p>
+                </div>
+                <div class="watch-item">
+                    <img src="../image/quandoi4.webp" alt="Quân đội mạnh mẽ">
+                    <p>Quân đội mạnh mẽ</p>
+                </div>
+                <div class="watch-item">
+                    <img src="../image/tissotsang5.webp" alt="Tissot sang trọng">
+                    <p>Tissot sang trọng</p>
+                </div>
+                <div class="watch-item">
+                    <img src="../image/lpt6.webp" alt="Casio LTP nữ tính">
+                    <p>Casio LTP nữ tính</p>
+                </div>
+                <div class="watch-item">
+                    <img src="../image/mtp7.webp" alt="Casio MTP thanh lịch">
+                    <p>Casio MTP thanh lịch</p>
+                </div>
+                <div class="watch-item">
+                    <img src="../image/rolex8.webp" alt="Giống Rolex">
+                    <p>Giống Rolex</p>
+                </div>
+            </div>
+        </section>
+
+        <!--ĐỒng hồ nữ bán chạy-->
+        <h1 id="femalewatch">ĐỒNG HỒ NỮ BÁN CHẠY</h1>
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../image/DW00100431.jpg" alt="Daniel Wellington Quadro" class="default-img">
+                    <img src="../image/DW00100431_1.jpg" alt="Daniel Wellington Quadro Hover" class="hover-img">
+                </div>
+                <div class="product-name">Daniel Wellington Quadro</div>
+                <div class="product-price">4,940,000 đ</div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../image/Saga-53555-SVMWSV-2.jpg" alt="Saga Stella" class="default-img">
+                    <img src="../image/saga2-2.avif" alt="Saga Stella Hover" class="hover-img">
+                </div>
+                <div class="product-name">Saga Stella</div>
+                <div class="product-price">6,380,000 đ</div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../image/T058.109.33.456.00.jpg" alt="Saga Long Xing Da Da" class="default-img">
+                    <img src="../image/T058.109.33.456.00-5.jpg" alt="Saga Long Xing Da Da Hover" class="hover-img">
+                </div>
+                <div class="product-name">Saga Long Xing Da Da</div>
+                <div class="product-price">8,180,000 đ</div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../image/Titoni-729-G-DB-541.jpg" alt="Tissot Lovely Square" class="default-img">
+                    <img src="../image/Titoni-729-G-DB-541-2.jpg" alt="Tissot Lovely Square Hover" class="hover-img">
+                </div>
+                <div class="product-name">Tissot Lovely Square</div>
+                <div class="product-price">12,080,000 đ</div>
+            </div>
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../image/K001.103.642.05.01-1.jpg" alt="Daniel Wellington Quadro" class="default-img">
+                    <img src="../image/K001.103.642.05.01.01.jpg" alt="Daniel Wellington Quadro Hover" class="hover-img">
+                </div>
+                <div class="product-name">Daniel Wellington Quadro</div>
+                <div class="product-price">4,940,000 đ</div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../image/71836-SVWHBL-2-3.jpg" alt="Saga Stella" class="default-img">
+                    <img src="../image/71836-SVWHBL-2-1.jpg" alt="Saga Stella Hover" class="hover-img">
+                </div>
+                <div class="product-name">Saga Stella</div>
+                <div class="product-price">6,380,000 đ</div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../image/2-11.jpg" alt="Saga Long Xing Da Da" class="default-img">
+                    <img src="../image/53111-SVGERD-2LH2.jpg" alt="Saga Long Xing Da Da Hover" class="hover-img">
+                </div>
+                <div class="product-name">Saga Long Xing Da Da</div>
+                <div class="product-price">8,180,000 đ</div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../image/Saga-53767-SVLGLG-2.jpg" alt="Tissot Lovely Square" class="default-img">
+                    <img src="../image/saga4-2.avif" alt="Tissot Lovely Square Hover" class="hover-img">
+                </div>
+                <div class="product-name">Tissot Lovely Square</div>
+                <div class="product-price">12,080,000 đ</div>
+            </div>
+        </div>
+        <!--Danh sách chuỗi cửa hàng-->
+        <h1 id="storelist">DANH SÁCH CỬA HÀNG</h1>
+        <div class="store-list">
+            <div class="store-card">
+                <h3>WatchStore Trần Đại Nghĩa</h3>
+                <p>97 Trần Đại Nghĩa, HBT, Hà Nội</p>
+                <a href="https://www.google.com/maps?q=97+Trần+Đại+Nghĩa,+HBT,+Hà+Nội" target="_blank">
+                    <span>📍</span> Xem chỉ đường
+                </a>
+            </div>
+            <div class="store-card">
+                <h3>WatchStore Trần Đăng Ninh</h3>
+                <p>58 Trần Đăng Ninh, Cầu Giấy, Hà Nội</p>
+                <a href="https://www.google.com/maps?q=58+Trần+Đăng+Ninh,+Cầu+Giấy,+Hà+Nội" target="_blank">
+                    <span>📍</span> Xem chỉ đường
+                </a>
+            </div>
+            <div class="store-card">
+                <h3>WatchStore Lê Văn Sỹ</h3>
+                <p>90 Lê Văn Sỹ, P11, Phú Nhuận, HCM</p>
+                <a href="https://www.google.com/maps?q=90+Lê+Văn+Sỹ,+P11,+Phú+Nhuận,+HCM" target="_blank">
+                    <span>📍</span> Xem chỉ đường
+                </a>
+            </div>
+            <div class="store-card">
+                <h3>WatchStore Quang Trung</h3>
+                <p>61 Quang Trung, P10, Gò Vấp, HCM</p>
+                <a href="https://www.google.com/maps?q=61+Quang+Trung,+P10,+Gò+Vấp,+HCM" target="_blank">
+                    <span>📍</span> Xem chỉ đường
+                </a>
+            </div>
+        </div>
+
+        <!-- Về chúng tôi-->
+        <h1 id="aboutus"> VỀ CHÚNG TÔI</h1>
+        <div class="main-container">
+            <!-- Cột hình ảnh -->
+            <div class="image-container">
+                <img src="../image/aboutus.webp" alt="Watch Image">
+            </div>
+            <!-- Cột nội dung -->
+            <div class="content-container">
+                <div class="logo">Watch<span class="logo-trangchu">Store</span></div>
+                <div class="title">Cửa hàng đồng hồ chính hãng</div>
+                <div class="description">
+                    Được thành lập vào năm 2020, WatchStore trở thành đại lý ủy quyền cho rất nhiều thương hiệu đến từ
+                    Nhật
+                    Bản và Thụy Sỹ chuyên bán đồng hồ đeo tay chính hãng.
+                    Với chính sách bảo hành và dịch vụ tốt nhất, WatchStore mang đến trải nghiệm tuyệt vời cho khách
+                    hàng.
+                </div>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+
+        <!-- Thương hiệu nổi bật-->
+        <h1 id="famousbrand"> THƯƠNG HIỆU NỔI BẬT</h1>
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <div class="carousel-item"><img src="../image/anh1.webp" alt="Image 1"></div>
+                    <div class="carousel-item"><img src="../image/anh2.webp" alt="Image 2"></div>
+                    <div class="carousel-item"><img src="../image/anh3.webp" alt="Image 3"></div>
+                    <div class="carousel-item"><img src="../image/anh4.webp" alt="Image 4"></div>
+                    <div class="carousel-item"><img src="../image/anh5.webp" alt="Image 5"></div>
+                    <div class="carousel-item"><img src="../image/anh6.webp" alt="Image 6"></div>
+                    <div class="carousel-item"><img src="../image/anh7.webp" alt="Image 7"></div>
+                    <div class="carousel-item"><img src="../image/anh8.webp" alt="Image 8"></div>
+                    <div class="carousel-item"><img src="../image/anh9.webp" alt="Image 9"></div>
+                    <div class="carousel-item"><img src="../image/anh10.webp" alt="Image 10"></div>
+                    <div class="carousel-item"><img src="../image/anh11.webp" alt="Image 11"></div>
+                    <div class="carousel-item"><img src="../image/anh12.webp" alt="Image 12"></div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="carousel-item"><img src="../image/anh13.webp" alt="Image 13"></div>
+                    <div class="carousel-item"><img src="../image/anh14.webp" alt="Image 14"></div>
+                    <div class="carousel-item"><img src="../image/anh15.webp" alt="Image 15"></div>
+                    <div class="carousel-item"><img src="../image/anh16.webp" alt="Image 16"></div>
+                    <div class="carousel-item"><img src="../image/anh17.webp" alt="Image 17"></div>
+                    <div class="carousel-item"><img src="../image/anh18.webp" alt="Image 18"></div>
+                    <div class="carousel-item"><img src="../image/anh19.webp" alt="Image 19"></div>
+                    <div class="carousel-item"><img src="../image/anh20.webp" alt="Image 20"></div>
+                    <div class="carousel-item"><img src="../image/anh21.webp" alt="Image 21"></div>
+                    <div class="carousel-item"><img src="../image/anh22.webp" alt="Image 22"></div>
+                    <div class="carousel-item"><img src="../image/anh23.webp" alt="Image 23"></div>
+
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="button left">◀</button>
+                <button class="button right">▶</button>
+            </div>
+        </div>
+        <!--Thanh dọc -->
+        <!-- Thanh dọc bên tráitrái -->
+        <div class="fixed-image left-image" style="margin-top: 50px;">
+            <img src="../image/label-left.png" alt="Left Image">
+        </div>
+
+        <!-- Thanh dọc bên phải -->
+        <div class="fixed-image right-image" style="margin-top: 50px;">
+            <img src="../image/label-right.png" alt="Right Image">
+        </div>
+
+        <!--Background-->
+        <div class="background-container"></div>
+    </main>
+
+    <!--FooterFooter-->
+    <!-------- Footer --------->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logo">Watch<span class="header-span">Store</span></div>
+                <p>Your Time, Your Style – Thời gian của bạn, Phong cách của bạn!</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="twitter">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="tel:+84842668121">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="mailto:huyencham10042k4@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Hệ thống cửa hàng</h3>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/Fe5it7yBeczqKwj86" class="footer-link">331 Đ. Ng. Gia Tự, P.Tiền
+                        An, Bắc Ninh</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/a8qRxE49UL5dGZrHA" class="footer-link">Phố P. Thanh Vị, Thanh Mỹ,
+                        Sơn Tây, Hà Nội</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/wBLUgrx3MSaYxfB99" class="footer-link">12 P. Chùa Bộc, Quang Trung,
+                        Đống Đa, Hà Nội</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/q17Ey6vtffrFr2XTA" class="footer-link">441 Nguyễn Huệ, Phường7, Tuy
+                        Hòa, Phú Yên</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Tiện ích</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Danh sách sản phẩm</a>
+                </li>
+                <li>
+                    <a href="../pages/contactUs.html" class="footer-link">Liên hệ với chúng tôi</a>
+                </li>
+                <li>
+                    <a href="../pages/aboutUs.html" class="footer-link">Tìm hiểu về chúng tôi</a>
+                </li>
+                <li>
+                    <a href="../pages/aboutUs.html" class="footer-link">Trở thành 1 phần của chúng tôi</a>
+                </li>
+            </ul>
+
+
+
+            <div id="footer_subscribe">
+                <h3>Theo dõi</h3>
+
+                <p>
+                    Nhập email của bạn để nhận tất cả các thông báo mới nhất của chúng tôi
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Bảo lưu mọi quyền
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
