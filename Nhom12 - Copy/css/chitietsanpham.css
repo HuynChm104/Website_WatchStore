@@ -1,0 +1,239 @@
+@import url('http://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+/* Reset styles */
+body, h1, h2, h3, p, ul, li, a, img, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    margin: 15px 0;
+    color: black;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Product details */
+.product-detail {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.product-price1{
+    color: red;
+    padding: 4px 0px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.product-price2 .giagoc {
+    color: #444;
+    display: inline-block;
+    padding: 4px 0px;
+    font-weight: 300;
+    text-decoration-line:line-through;
+}
+.product-info .product-price2 .percent {
+    color: red;
+    padding: 4px 0px;
+    font-weight: 600;
+}
+.product-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: black;
+}
+.product-info h1{
+    color: black;
+}
+
+button.add-to-cart {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button.add-to-cart:hover {
+    background: #0056b3;
+}
+
+/* Tabs */
+.product-tabs {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+.description p{
+    color: black;
+}
+.tab-pane {
+    display: none;
+    list-style-type: none;
+/* Ẩn tất cả các tab theo mặc định */
+}
+.tab-pane.active {
+    display: block; /* Chỉ hiển thị tab có lớp active */
+}
+
+
+.tabs {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.tabs li {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    color: #007bff;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tabs li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+    color: #333;
+}
+
+.tab-content {
+    display:block;
+    color: black;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content .tab-pane ul li{
+    list-style-type: none;
+}
+
+/* Related products */
+.related-products {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.related-products h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+    width: 150px;
+}
+
+.product-item img {
+    width: 90%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.product-item .product-name {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.product-item .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
