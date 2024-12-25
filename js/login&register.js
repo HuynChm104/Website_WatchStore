@@ -11,7 +11,7 @@ function signup(event){
     var json = JSON.stringify(user);
     localStorage.setItem(username, json);
 
-    alert("Dang ki thanh cong");
+    alert("Đăng ký thành công");
     window.location.href = "../pages/login.html"
 }
 
@@ -23,16 +23,16 @@ function login(event) {
     var data = JSON.parse(user);
 
     if (user == null) {
-        alert ("Tai khoan khong ton tai");
+        alert ("Tài khoản không tồn tại");
     }
     else if (
         username == data.username &&
         password == data.password
     ) {
-        alert ("Dang nhap thanh cong");
+        alert ("Đăng nhập thành công");
         window.location.href = "../pages/register.html";
     } else {
-        alert ("Dang nhap that bai")
+        alert ("Thông tin không chính xác")
     }
 }
     
