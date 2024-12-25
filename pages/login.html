@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login.css">
     <title>Đăng nhập</title>
@@ -15,24 +17,24 @@
 
     <!-- Header -->
     <header>
-        <input type ="checkbox" name ="" id ="chk1">
+        <input type="checkbox" name="" id="chk1">
         <div class="logo">Watch<span class="header-span">Store</span></div>
         <div class="search-box-header">
             <form>
-                <input type ="text" name ="search" id ="srch" placeholder="Search">
-                <button type ="submit" class="button-header"><i class="fa fa-search"></i></button>
+                <input type="text" name="search" id="srch" placeholder="Search">
+                <button type="submit" class="button-header"><i class="fa fa-search"></i></button>
             </form>
         </div>
 
         <ul class="main-menu-header">
-            <li class="header-name"><a href="#" class="header-link">Trang chủ</a></li>
-            <li class="header-name"><a href="#" class="header-link">Sản phẩm</a></li>
+            <li class="header-name"><a href="../pages/trangchu.html" class="header-link">Trang chủ</a></li>
+            <li class="header-name"><a href="../pages/trangsanpham.html" class="header-link">Sản phẩm</a></li>
             <li class="header-name"><a href="../pages/aboutUs.html" class="header-link">Về chúng tôi</a></li>
             <li class="header-name"><a href="../pages/contactUs.html" class="header-link">Liên hệ</a></li>
 
             <li class="header-name icons">
                 <a href="#" class="header-link"><i class="fa-solid fa-cart-shopping" id="header-icons"></i></a>
-                <a href="../pages/login.html" class="header-link"><i class="fa-solid fa-user" id="header-icons"></i></a>      
+                <a href="../pages/login.html" class="header-link"><i class="fa-solid fa-user" id="header-icons"></i></a>
             </li>
         </ul>
 
@@ -47,48 +49,55 @@
     <main>
 
         <div class="body">
-            <div class="wrapper login">
-                <form onsubmit="login(event)">
-                    <h3>Đăng nhập</h3>
-                    <div class="input-box">
-                        <input type="text" id="username" placeholder=" " required> <!--Để cách là có giá trị nên chũ sẽ ko nhảy xuống-->
-                        <label for="username">Username</label>
-                        <i class="fa-solid fa-user"></i>
-                    </div>
+            <div class="content-container">
+                <div class="text">
+                    <h3>Chào mừng bạn quay trở lại!</h3>
+                    <p>Để tiếp tục trải nghiệm, vui lòng đăng nhập vào tài khoản của bạn. Nếu bạn chưa có tài khoản, đừng lo, bạn có thể đăng ký ngay bây giờ!</p>
+                </div>
+                <div class="wrapper login">
+                    <form onsubmit="login(event)">
+                        <h3>Đăng nhập</h3>
+                        <div class="input-box">
+                            <input type="text" id="username" placeholder=" " required>
+                            <!--Để cách là có giá trị nên chũ sẽ ko nhảy xuống-->
+                            <label for="username">Username</label>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
 
-                    <div class="input-box">
-                        <input type="password" id="password" placeholder=" " required>
-                        <label for="password">Password</label>
-                        <i class="fa-solid fa-lock"></i>
-                    </div>
+                        <div class="input-box">
+                            <input type="password" id="password" placeholder=" " required>
+                            <label for="password">Password</label>
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
 
-                    <div class="remember-forgot">
-                        <label for=""><input type="checkbox">Ghi nhớ tôi</label>
-                        <a href="#">Bạn quên mật khẩu?</a>
-                    </div>
+                        <div class="remember-forgot">
+                            <label for=""><input type="checkbox">Ghi nhớ tôi</label>
+                            <a href="#">Bạn quên mật khẩu?</a>
+                        </div>
 
-                    <button type="submit" class="btn">Đăng nhập</button>
+                        <button type="submit" class="btn">Đăng nhập</button>
 
-                    <p class="social-text">Hoặc đăng nhập với tài khoản xã hội </p>
+                        <p class="social-text">Hoặc đăng nhập với tài khoản xã hội </p>
 
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fa-brands fa-google"></i>
-                        </a>
-                    </div>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                        </div>
 
-                    <div class="register-link">
-                        <p>Bạn chưa có tài khoản?
-                            <a href="../pages/register.html">Đăng kí ngay</a>
-                        </p>
-                    </div>
-                </form>
+                        <div class="register-link">
+                            <p>Bạn chưa có tài khoản?
+                                <a href="../pages/register.html">Đăng kí ngay</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -97,7 +106,7 @@
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
-                <div class="logo">Watch<span>Store</span></div>
+                <div class="logo">Watch<span class="header-span">Store</span></div>
                 <p>Your Time, Your Style – Thời gian của bạn, Phong cách của bạn!</p>
 
                 <div id="footer_social_media">
@@ -124,16 +133,20 @@
                     <h3>Hệ thống cửa hàng</h3>
                 </li>
                 <li>
-                    <a href="https://maps.app.goo.gl/Fe5it7yBeczqKwj86" class="footer-link">331 Đ. Ng. Gia Tự, P.Tiền An, Bắc Ninh</a>
+                    <a href="https://maps.app.goo.gl/Fe5it7yBeczqKwj86" class="footer-link">331 Đ. Ng. Gia Tự, P.Tiền
+                        An, Bắc Ninh</a>
                 </li>
                 <li>
-                    <a href="https://maps.app.goo.gl/a8qRxE49UL5dGZrHA" class="footer-link">Phố P. Thanh Vị, Thanh Mỹ, Sơn Tây, Hà Nội</a>
+                    <a href="https://maps.app.goo.gl/a8qRxE49UL5dGZrHA" class="footer-link">Phố P. Thanh Vị, Thanh Mỹ,
+                        Sơn Tây, Hà Nội</a>
                 </li>
                 <li>
-                    <a href="https://maps.app.goo.gl/wBLUgrx3MSaYxfB99" class="footer-link">12 P. Chùa Bộc, Quang Trung, Đống Đa, Hà Nội</a>
+                    <a href="https://maps.app.goo.gl/wBLUgrx3MSaYxfB99" class="footer-link">12 P. Chùa Bộc, Quang Trung,
+                        Đống Đa, Hà Nội</a>
                 </li>
                 <li>
-                    <a href="https://maps.app.goo.gl/q17Ey6vtffrFr2XTA" class="footer-link">441 Nguyễn Huệ, Phường7, Tuy Hòa, Phú Yên</a>
+                    <a href="https://maps.app.goo.gl/q17Ey6vtffrFr2XTA" class="footer-link">441 Nguyễn Huệ, Phường7, Tuy
+                        Hòa, Phú Yên</a>
                 </li>
             </ul>
 

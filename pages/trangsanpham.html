@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sanpham.css">
+    <title>Watch Shop</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo">Watch<span class="header-span">Store</span></div>
+        <div class="search-box-header">
+            <form>
+                <input type="text" name="search" id="srch" placeholder="Search">
+                <button type="submit" class="button-header"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <ul class="main-menu-header">
+            <li class="header-name"><a href="../pages/trangchu.html" class="header-link">Trang chủ</a></li>
+            <li class="header-name"><a href="../pages/trangsanpham.html" class="header-link">Sản phẩm</a></li>
+            <li class="header-name"><a href="../pages/aboutUs.html" class="header-link">Về chúng tôi</a></li>
+            <li class="header-name"><a href="../pages/contactUs.html" class="header-link">Liên hệ</a></li>
+
+            <li class="header-name icons">
+                <a href="../pages/cart.html" class="header-link"><i class="fa-solid fa-cart-shopping"
+                        id="header-icons"></i></a>
+                <a href="../pages/login.html" class="header-link"><i class="fa-solid fa-user" id="header-icons"></i></a>
+            </li>
+        </ul>
+
+        <div class="menu-header">
+            <label for="chk1">
+                <i class="fa-solid fa-bars" id="header-icons"></i>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        </section>
+        <!-- Nội dung chính của trang web -->
+        <!--Slide show-->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="../image/banner-movado_1729846721.jpg.webp" alt="Slide 1"></div>
+                <div class="slide"><img src="../image/shop-dong-ho-omega-chinh-hang-tphcm_1633760511.jpg.webp" alt="Slide 2"></div>
+                <div class="slide"><img src="../image/banner-citizen_1729765527.jpg.webp" alt="Slide 3"></div>
+            </div>
+            <div class="navigation">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+        <div class="indicators"></div>
+        </section>
+
+        <div id="wrapper">
+            <div class="sorting-container">
+                <span class="label">Sắp xếp theo:</span>
+                <ul class="sorting-options">
+                  <li class="option" a href="../pages/chitietsanpham2.html" target="_blank"> </a>Nổi bật</li>
+                  <li class="option">Bán chạy</li>
+                  <li class="option">Giảm giá</li>
+                  <li class="option">Mới</li>
+                  <li class="option dropdown">
+                    Giá
+                    <span class="arrow">▼</span>
+                  </li>
+                </ul>
+              </div>
+            <ul class="products">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham3.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m305l-7avdf-nam-thumb-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham3.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham3.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham3.html" class="product-name">Đồng hồ Casio 34 mm Nam
+                                MTP-M305L-7AVDF</a>
+                            <div class="product-price1">2.756.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.675.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham2.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m305d-1avdf-nam-thumb-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham2.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham2.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham2.html" class="product-name">CASIO 34 mm Nam
+                                MTP-M305D-1AVDF</a>
+                            <div class="product-price1">2.825.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.767.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.7</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m100d-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 42.5 mm Nam
+                                MTP-M100D-7AVDF</a>
+                            <div class="product-price1">2.402.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.205.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.5</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m100l-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 42.5 mm Nam
+                                MTP-M100L-7AVDF</a>
+                            <div class="product-price1">2.756.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.675.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-rs105l-7bvdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 40 mm Nam
+                                MTP-RS105L-7BVDF</a>
+                            <div class="product-price1">1.490.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.203.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m300l-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 40 mm Nam
+                                MTP-M300D-7AVDF</a>
+                            <div class="product-price1">2.684.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.570.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m300d-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 40 mm Nam
+                                MTP-M300L-7AVDF</a>
+                            <div class="product-price1">2.615.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.487.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-e715d-7avdf-nam-thumb-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 43.4 mm Nam
+                                MTP-E715D-7AVDF</a>
+                            <div class="product-price1">1.931.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.863.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m305l-7avdf-nam-thumb-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">Đồng hồ Casio 34 mm Nam
+                                MTP-M305L-7AVDF</a>
+                            <div class="product-price1">2.756.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.675.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m305d-1avdf-nam-thumb-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 34 mm Nam
+                                MTP-M305D-1AVDF</a>
+                            <div class="product-price1">2.825.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.767.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.7</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m100d-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 42.5 mm Nam
+                                MTP-M100D-7AVDF</a>
+                            <div class="product-price1">2.402.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.205.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.5</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m100l-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 42.5 mm Nam
+                                MTP-M100L-7AVDF</a>
+                            <div class="product-price1">2.756.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.675.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-rs105l-7bvdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 40 mm Nam
+                                MTP-RS105L-7BVDF</a>
+                            <div class="product-price1">1.490.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.203.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m300l-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 40 mm Nam
+                                MTP-M300D-7AVDF</a>
+                            <div class="product-price1">2.684.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.570.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m300d-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 40 mm Nam
+                                MTP-M300L-7AVDF</a>
+                            <div class="product-price1">2.615.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.487.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-e715d-7avdf-nam-thumb-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 43.4 mm Nam
+                                MTP-E715D-7AVDF</a>
+                            <div class="product-price1">1.931.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.863.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m305l-7avdf-nam-thumb-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">Đồng hồ Casio 34 mm Nam
+                                MTP-M305L-7AVDF</a>
+                            <div class="product-price1">2.756.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.675.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m305d-1avdf-nam-thumb-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 34 mm Nam
+                                MTP-M305D-1AVDF</a>
+                            <div class="product-price1">2.825.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.767.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.7</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m100d-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 42.5 mm Nam
+                                MTP-M100D-7AVDF</a>
+                            <div class="product-price1">2.402.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.205.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.5</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m100l-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 42.5 mm Nam
+                                MTP-M100L-7AVDF</a>
+                            <div class="product-price1">2.756.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.675.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-rs105l-7bvdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 40 mm Nam
+                                MTP-RS105L-7BVDF</a>
+                            <div class="product-price1">1.490.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.203.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m300l-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham3.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham3.html" class="product-name">CASIO 40 mm Nam
+                                MTP-M300D-7AVDF</a>
+                            <div class="product-price1">2.684.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.570.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-m300d-7avdf-nam-thumb-fix-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham2.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham2.html" class="product-name">CASIO 40 mm Nam
+                                MTP-M300L-7AVDF</a>
+                            <div class="product-price1">2.615.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.487.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href="../pages/chitietsanpham.html" class="product-thumb">
+                                <img src="../image/casio-mtp-e715d-7avdf-nam-thumb-600x600.jpg" alt="">
+                            </a>
+                            <a href="../pages/chitietsanpham.html" class="buy-now">Mua ngay</a>
+                        </div>
+                        <div class="product-info">
+                            <a href="../pages/chitietsanpham.html" class="product-catego">Casio</a>
+                            <a href="../pages/chitietsanpham.html" class="product-name">CASIO 43.4 mm Nam
+                                MTP-E715D-7AVDF</a>
+                            <div class="product-price1">1.931.000₫</div>
+                            <div class="product-price2">
+                                <p class="giagoc">3.863.000₫</p>
+                                <span class="percent">-25%</span>
+                            </div>
+                            <div class="fa fa-star checked"> <b>4.3</b> </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Phần hiển thị số trang -->
+        <div class="pagination">
+            <a href="#" class="prev">« Trang trước</a>
+            <a href="#" class="page-number">1</a>
+            <a href="#" class="page-number">2</a>
+            <a href="#" class="page-number">3</a>
+            <a href="#" class="page-number">4</a>
+            <a href="#" class="page-number">5</a>
+            <a href="#" class="next">Trang sau »</a>
+        </div>
+        
+    </main>
+
+    <!-------- Footer --------->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logo">Watch<span class="header-span">Store</span></div>
+                <p>Your Time, Your Style – Thời gian của bạn, Phong cách của bạn!</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="twitter">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="tel:+84842668121">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="mailto:huyencham10042k4@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Hệ thống cửa hàng</h3>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/Fe5it7yBeczqKwj86" class="footer-link">331 Đ. Ng. Gia Tự, P.Tiền
+                        An, Bắc Ninh</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/a8qRxE49UL5dGZrHA" class="footer-link">Phố P. Thanh Vị, Thanh Mỹ,
+                        Sơn Tây, Hà Nội</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/wBLUgrx3MSaYxfB99" class="footer-link">12 P. Chùa Bộc, Quang Trung,
+                        Đống Đa, Hà Nội</a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/q17Ey6vtffrFr2XTA" class="footer-link">441 Nguyễn Huệ, Phường7, Tuy
+                        Hòa, Phú Yên</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Tiện ích</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Danh sách sản phẩm</a>
+                </li>
+                <li>
+                    <a href="../pages/contactUs.html" class="footer-link">Liên hệ với chúng tôi</a>
+                </li>
+                <li>
+                    <a href="../pages/aboutUs.html" class="footer-link">Tìm hiểu về chúng tôi</a>
+                </li>
+                <li>
+                    <a href="../pages/aboutUs.html" class="footer-link">Trở thành 1 phần của chúng tôi</a>
+                </li>
+            </ul>
+
+
+
+            <div id="footer_subscribe">
+                <h3>Theo dõi</h3>
+
+                <p>
+                    Nhập email của bạn để nhận tất cả các thông báo mới nhất của chúng tôi
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Bảo lưu mọi quyền
+        </div>
+    </footer>
+
+    <script src="../js/slide.js"></script>
+
+</body>
+
+</html>
