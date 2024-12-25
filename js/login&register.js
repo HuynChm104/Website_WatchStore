@@ -12,7 +12,7 @@ function signup(event){
     localStorage.setItem(username, json);
 
     alert("Đăng ký thành công");
-    window.location.href = "../pages/login.html"
+    window.location.href = "../pages/trangchu.html";
 }
 
 function login(event) {
@@ -30,7 +30,7 @@ function login(event) {
         password == data.password
     ) {
         alert ("Đăng nhập thành công");
-        window.location.href = "../pages/register.html";
+        window.location.href = "../pages/trangchu.html";
     } else {
         alert ("Thông tin không chính xác")
     }
