@@ -1,0 +1,241 @@
+@import url('http://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+/* Body and container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    margin: 15px 0;
+    color: black;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Product details */
+.product-detail {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: auto;
+    height:auto;
+    display:block;
+    border-radius: 8px;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.product-price1{
+    color: red;
+    padding: 4px 0px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.product-price2 .giagoc {
+    color: #444;
+    display: inline-block;
+    padding: 4px 0px;
+    font-weight: 300;
+    text-decoration-line:line-through;
+}
+.product-info .product-price2 .percent {
+    color: red;
+    padding: 4px 0px;
+    font-weight: 600;
+}
+.product-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: black;
+}
+.product-info h1{
+    color: black;
+}
+
+button.add-to-cart {
+    width: 180px;
+    height: 40px;
+    background:#FFD700;
+    color: black; /* Chữ trắng */
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ */
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+
+button.add-to-cart:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Bóng đổ mạnh hơn */
+    transform: translateY(-2px); /* Tạo hiệu ứng nhấn nổi */
+}
+
+/* Tabs */
+.product-tabs {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+.description p{
+    color: black;
+}
+.tab-pane {
+    display: none;
+    list-style-type: none;
+/* Ẩn tất cả các tab theo mặc định */
+}
+.tab-pane.active {
+    display: block; /* Chỉ hiển thị tab có lớp active */
+}
+
+
+.tabs {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.tabs li {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    color: #007bff;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tabs li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+    color: #333;
+}
+
+.tab-content {
+    display:block;
+    color: black;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content .tab-pane ul li{
+    list-style-type: none;
+}
+
+/* Related products */
+.related-products {
+    margin: 30px 0;
+    padding: 20px;
+    /*background-color: #f9f9f9;*/
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.related-products h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    width: 22%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #e63946;
+    margin-top: 5px;
+}
+
+.related-products a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: inherit; /* Giữ nguyên màu chữ */
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .product-detail{
+        max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước container */
+            height: auto;    /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+            display: block;  /* Loại bỏ khoảng cách không mong muốn dưới hình ảnh */
+    }
+    .product-item {
+        width: 48%;
+    }
+           
+}
+
+@media (max-width: 480px) {
+    .product-detail{
+        max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước container */
+            height: auto;    /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+            display: block;  /* Loại bỏ khoảng cách không mong muốn dưới hình ảnh */
+    }
+    .product-item {
+        width: 100%;
+    }
+      
+}
+

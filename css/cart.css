@@ -1,0 +1,188 @@
+@import url('http://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Giỏ hàng */
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-item-quantity,
+.cart-item-price {
+    font-size: 14px;
+}
+
+.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    background-color: darkred;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: right; /* Mặc định căn phải */
+}
+
+.pay {
+    display: flex;
+    margin: 10px 0;
+    margin-top: 20px;
+    justify-content: right;
+}
+
+.pay button {
+    height: 40px;
+    width: 110px;
+    background: #FFD700; /* Gradient từ vàng ánh kim đến cam ánh kim */
+    color: black; /* Chữ trắng */
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ */
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.pay button:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Bóng đổ mạnh hơn */
+    transform: translateY(-2px); /* Tạo hiệu ứng nhấn nổi */
+}
+
+.remove-item {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #cc0000;
+}
+
+/* Style khi nút được nhấn */
+.remove-item:active {
+    background-color: #a30000;
+    transform: scale(0.95);
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    .cart-container {
+        width: 95%;
+    }
+
+    .cart-item {
+        flex-direction: column; /* Chuyển từ hàng ngang sang cột */
+        align-items: flex-start;
+    }
+
+    .cart-item-image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .cart-item-info {
+        width: 100%;
+    }
+
+    .cart-item-name {
+        font-size: 14px;
+    }
+
+    .cart-item-quantity,
+    .cart-item-price {
+        font-size: 12px;
+    }
+
+    .remove-item {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .cart-summary {
+        font-size: 16px;
+        text-align: right;
+    }
+
+    .pay {
+        justify-content: right;
+    }
+
+    .pay button {
+        width: 24%;
+        font-size: 16px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
+    .cart-item-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cart-item-name {
+        font-size: 12px;
+    }
+
+    .cart-item-quantity,
+    .cart-item-price {
+        font-size: 10px;
+    }
+
+    .remove-item {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .cart-summary {
+        font-size: 10px;
+    }
+
+    .pay button {
+        font-size: 14px;
+        padding: 8px;
+        width: 35%;
+    }
+}

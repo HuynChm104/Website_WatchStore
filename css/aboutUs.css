@@ -57,7 +57,7 @@ section.block {
 .btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background: linear-gradient(90deg, #FFD700, #FFA500); /* Gradient từ vàng ánh kim đến cam ánh kim */
+    background:#FFD700;
     color: black; /* Chữ trắng */
     border: none;
     border-radius: 40px;
@@ -68,7 +68,6 @@ section.block {
 }
 
 .btn:hover {
-    background: linear-gradient(90deg, #FFD700, #FFD700); /* Gradient đổi màu khi hover */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Bóng đổ mạnh hơn */
     transform: translateY(-2px); /* Tạo hiệu ứng nhấn nổi */
 }

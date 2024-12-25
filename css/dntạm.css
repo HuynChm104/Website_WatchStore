@@ -1,0 +1,226 @@
+@import url('http://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+.body {
+    display: flex;
+    justify-content: flex-start; /* Căn trái */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f4f7;
+    background-size: cover;
+    background-position: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Bố cục cho .text-container */
+.text-container {
+    max-width: 50%; /* Chiếm một nửa màn hình */
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: left; /* Căn trái cho chữ */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.text-container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Cập nhật layout cho .wrapper */
+.wrapper {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: black;
+    border-radius: 10px;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+/* H3 trong wrapper */
+.wrapper h3 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+/* Bố cục input-box */
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin: 21px 0;
+    color: #b9aeae;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding-bottom: 45px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    transition: 0.2s ease;
+}
+
+.input-box input:focus {
+    border: 2px solid #ffcc00;
+}
+
+/* Label cho input */
+.input-box label {
+    position: absolute;
+    top: 44%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #b9aeae;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-box input:not(:placeholder-shown) + label,
+.input-box input:focus + label {
+    top: 0;
+    font-size: 13px;
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 5px;
+    color: #ffcc00;
+    border-radius: 30px;
+}
+
+.input-box i {
+    position: absolute;
+    right: -1cm;
+    top: 44%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #b9aeae;
+}
+
+/* Chỉnh sửa cho phần remember và forgot */
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-top: 3px;
+}
+
+.remember-forgot a {
+    color: black;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Nút đăng nhập */
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.wrapper .btn:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Chỉnh sửa cho icon xã hội */
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    margin-top: -3mm;
+}
+
+.social-icon:hover {
+    border-color: #ffcc00;
+}
+
+/* Quên mật khẩu */
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 15px 0;
+    padding-top: 0;
+}
+
+.register-link p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 437px) {
+    .body {
+        padding: 5px;
+    }
+
+    .wrapper h3 {
+        font-size: 25px;
+    }
+
+    .wrapper .input-box {
+        width: 85%;
+        height: 13px;
+    }
+}

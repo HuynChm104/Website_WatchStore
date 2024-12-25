@@ -145,10 +145,17 @@ header .menu-header #header-icons:hover {
 }
 
 @media (max-width: 567px) {
-    header .logo {
+    header .logo{
         font-size: 1.55rem;
         margin-left: 5px;
+        margin-top: 25px;
     }
+
+    header .logo .header-span {
+        font-size: 1.55rem;
+    }
+
+
 }
 
 @media (max-width: 520px) {
@@ -301,6 +308,7 @@ footer {
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+    color: black;
 }
 
 @media (max-width: 768px) {
